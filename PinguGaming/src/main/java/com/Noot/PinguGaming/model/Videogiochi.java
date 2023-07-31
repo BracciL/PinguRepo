@@ -9,9 +9,9 @@ import jakarta.persistence.*;
 public class Videogiochi implements Serializable 
 {
 @Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
+@GeneratedValue(strategy = GenerationType.AUTO)
 @Column(nullable = false, updatable = false)
-private Long id;
+private int id;
 private String nome;
 private String tipologia;
 private String data_uscita;
@@ -26,7 +26,7 @@ public Videogiochi() {
 }
 
 
-public Videogiochi(Long id, String nome, String tipologia, String data_uscita, String piattaforma, int gioco_key,
+public Videogiochi(int id, String nome, String tipologia, String data_uscita, String piattaforma, int gioco_key,
 	int prezzo) {
 	super();
 	this.id = id;
@@ -40,10 +40,10 @@ public Videogiochi(Long id, String nome, String tipologia, String data_uscita, S
 
 
 
-public Long getId() {
+public int getId() {
 	return id;
 }
-public void setId(Long id) {
+public void setId(int id) {
 	this.id = id;
 }
 public String getNome() {
