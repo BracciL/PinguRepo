@@ -1,5 +1,5 @@
 package repo;
 
-public interface VideogiochiRepo extends JpaRepository<>{
+public interface VideogiochiRepo extends JpaRepository<Videogiochi, int>{
 
 }
