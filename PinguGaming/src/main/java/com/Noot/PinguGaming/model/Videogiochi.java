@@ -1,6 +1,5 @@
-package com.model;
+package com.Noot.PinguGaming.model;
 
-import jakarta.persistence.GeneratedValue;
 
 import java.io.Serializable;
 
@@ -10,9 +9,9 @@ import jakarta.persistence.*;
 public class Videogiochi implements Serializable 
 {
 @Id
-@GeneratedValue(strategy = GenerationType.AUTO)
+@GeneratedValue(strategy = GenerationType.IDENTITY)
 @Column(nullable = false, updatable = false)
-private int id;
+private Long id;
 private String nome;
 private String tipologia;
 private String data_uscita;
@@ -27,8 +26,8 @@ public Videogiochi() {
 }
 
 
-public Videogiochi(int id, String nome, String tipologia, String data_uscita, String piattaforma, int gioco_key,
-		int prezzo) {
+public Videogiochi(Long id, String nome, String tipologia, String data_uscita, String piattaforma, int gioco_key,
+	int prezzo) {
 	super();
 	this.id = id;
 	this.nome = nome;
@@ -41,10 +40,10 @@ public Videogiochi(int id, String nome, String tipologia, String data_uscita, St
 
 
 
-public int getId() {
+public Long getId() {
 	return id;
 }
-public void setId(int id) {
+public void setId(Long id) {
 	this.id = id;
 }
 public String getNome() {
