@@ -1,4 +1,4 @@
-package repo;
+package com.Noot.PinguGaming.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
