@@ -19,11 +19,11 @@ public class utente implements Serializable{
 	private String password_utente;
 	private String email_utente;
 	
-	public int getId_admin() {
+	public int getId_utente () {
 		return id_utente;
 	}
-	public void setId_admin(int id_admin) {
-		this.id_utente = id_admin;
+	public void setId_utente(int id_utente) {
+		this.id_utente = id_utente;
 	}
 	public String getUsername_utente() {
 		return username_utente;
