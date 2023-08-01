@@ -1,6 +1,6 @@
 package com.Noot.PinguGaming.service;
 
-<<<<<<< HEAD
+
 import java.util.ArrayList;
 import java.util.UUID;
 import java.io.*;
@@ -48,21 +48,8 @@ public class VideogiochiService
     }
   
 
-=======
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-import com.Noot.PinguGaming.repo.VideogiochiRepo;
-@Service
-public class VideogiochiService {
-	private final VideogiochiRepo videogiochirepo;
-@Autowired
-	public VideogiochiService(VideogiochiRepo videogiochiRepo)
-	{
-		this.videogiochirepo = videogiochiRepo;
-		
-	}
 	
 	
->>>>>>> 2fc2ae1aa04a4df91111a77f8e23b3b2df48918e
+
 }
