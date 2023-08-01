@@ -26,7 +26,7 @@ public class VideogiochiService
 	
 	public Videogiochi addGioco(Videogiochi repo)
 	{
-		repo.setNome(UUID.randomUUID().toString());
+		repo.setNome(toString());
 		return rep.save(repo);
 	}
 
