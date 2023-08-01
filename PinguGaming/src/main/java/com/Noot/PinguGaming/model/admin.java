@@ -16,14 +16,6 @@ public class admin implements Serializable
 	private String password_admin;
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
 	public admin() {
 		super();
 		// TODO Auto-generated constructor stub

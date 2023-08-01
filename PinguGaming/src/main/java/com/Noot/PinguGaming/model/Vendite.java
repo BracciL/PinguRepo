@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 
 @Entity
 public class Vendite implements Serializable {
-     
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(nullable = false, updatable = false)
@@ -14,9 +13,6 @@ public class Vendite implements Serializable {
 	private String email_utente;
 	private String username_utente;
 	private String password_utente;
-	
-	
-	
 	
 	public Vendite() {
 		super();
@@ -53,9 +49,4 @@ public class Vendite implements Serializable {
 	public void setPassword_utente(String password_utente) {
 		this.password_utente = password_utente;
 	}
-	
-	
-	
-	
-	
 }
